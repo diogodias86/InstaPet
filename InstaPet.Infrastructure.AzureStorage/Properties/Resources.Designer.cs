@@ -61,7 +61,7 @@ namespace InstaPet.Infrastructure.BlobStorage.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to DefaultEndpointsProtocol=https;AccountName=instapet;AccountKey=YN43GX5vQx1XcwM4MYmPHYAYwKQtvpj4H5Yc0aPvif3xr6GZT12hjRB69fWKI0TJTENFglJm8/0h/ku0YwdDPg==;EndpointSuffix=core.windows.net.
         /// </summary>
         internal static string StorageAccountConnectionString {
             get {

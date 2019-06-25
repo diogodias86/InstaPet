@@ -10,6 +10,7 @@ namespace InstaPet.DomainModel.Entities
         public string Email { get; set; }
         public string UserName { get; set; }
         public string Country { get; set; }
+        public bool Active { get; set; }
         public virtual ICollection<Pet> Pets { get; set; }
 
         public Profile()

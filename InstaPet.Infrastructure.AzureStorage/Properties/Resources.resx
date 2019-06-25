@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="StorageAccountConnectionString" xml:space="preserve">
-    <value />
+    <value>DefaultEndpointsProtocol=https;AccountName=instapet;AccountKey=YN43GX5vQx1XcwM4MYmPHYAYwKQtvpj4H5Yc0aPvif3xr6GZT12hjRB69fWKI0TJTENFglJm8/0h/ku0YwdDPg==;EndpointSuffix=core.windows.net</value>
   </data>
 </root>

@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAzure.Storage;
+﻿using InstaPet.DomainService.Interfaces;
+using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using System;
 using System.Collections.Generic;
@@ -7,9 +8,9 @@ using System.Text;
 
 namespace InstaPet.Infrastructure.BlobStorage
 {
-    public class AzureBlobService
+    public class AzureBlobService : IBlobStorage
     {
-        private CloudStorageAccount _cloudStorageAccount;
+        private readonly CloudStorageAccount _cloudStorageAccount;
 
         public AzureBlobService()
         {

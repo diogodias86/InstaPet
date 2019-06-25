@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Domain", "1 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure", "2 - Infrastructure", "{620C7A04-5C79-444C-B7EE-BDEE2B817C38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaPet.DomainModel", "InstaPet.DomainModel\InstaPet.DomainModel.csproj", "{75E4A69A-6413-4E46-B663-0013396E03D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstaPet.DomainModel", "InstaPet.DomainModel\InstaPet.DomainModel.csproj", "{75E4A69A-6413-4E46-B663-0013396E03D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaPet.DomainService", "InstaPet.DomainService\InstaPet.DomainService.csproj", "{4D72754D-5B43-4AC0-A494-4110C75D5B35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstaPet.DomainService", "InstaPet.DomainService\InstaPet.DomainService.csproj", "{4D72754D-5B43-4AC0-A494-4110C75D5B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaPet.Infrastructure.DataAccess", "InstaPet.Infrastructure.DataAccess\InstaPet.Infrastructure.DataAccess.csproj", "{0654A960-2B40-42C1-BE17-0C317EDB60BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstaPet.Infrastructure.DataAccess", "InstaPet.Infrastructure.DataAccess\InstaPet.Infrastructure.DataAccess.csproj", "{0654A960-2B40-42C1-BE17-0C317EDB60BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaPet.Infrastructure.BlobStorage", "InstaPet.Infrastructure.AzureStorage\InstaPet.Infrastructure.BlobStorage.csproj", "{63E2C5AE-7ADE-4E97-B725-881CE1AC4DCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstaPet.Infrastructure.BlobStorage", "InstaPet.Infrastructure.AzureStorage\InstaPet.Infrastructure.BlobStorage.csproj", "{63E2C5AE-7ADE-4E97-B725-881CE1AC4DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaPet.WebApp", "InstaPet.WebApp\InstaPet.WebApp.csproj", "{D5BD1B4A-686B-4732-BFC4-D0AB121E91FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstaPet.WebApp", "InstaPet.WebApp\InstaPet.WebApp.csproj", "{D5BD1B4A-686B-4732-BFC4-D0AB121E91FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaPet.TestDb", "InstaPet.TestDb\InstaPet.TestDb.csproj", "{DB0F05AA-1B70-4CBE-8C68-76B3BA52A35C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D5BD1B4A-686B-4732-BFC4-D0AB121E91FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5BD1B4A-686B-4732-BFC4-D0AB121E91FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5BD1B4A-686B-4732-BFC4-D0AB121E91FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0F05AA-1B70-4CBE-8C68-76B3BA52A35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0F05AA-1B70-4CBE-8C68-76B3BA52A35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0F05AA-1B70-4CBE-8C68-76B3BA52A35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0F05AA-1B70-4CBE-8C68-76B3BA52A35C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{0654A960-2B40-42C1-BE17-0C317EDB60BE} = {620C7A04-5C79-444C-B7EE-BDEE2B817C38}
 		{63E2C5AE-7ADE-4E97-B725-881CE1AC4DCC} = {620C7A04-5C79-444C-B7EE-BDEE2B817C38}
 		{D5BD1B4A-686B-4732-BFC4-D0AB121E91FA} = {F6B6B740-2248-442C-8F1A-28174A0B62B9}
+		{DB0F05AA-1B70-4CBE-8C68-76B3BA52A35C} = {F6B6B740-2248-442C-8F1A-28174A0B62B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BCA4AA79-9D0A-4F31-9915-F05E7ACCED37}

@@ -61,7 +61,7 @@ namespace InstaPet.Infrastructure.DataAccess.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to COLOQUE AQUI A STRING DE CONEXÃO COM O BANCO DE DADOS.
+        ///   Looks up a localized string similar to Server=tcp:instapetdb.database.windows.net,1433;Initial Catalog=InstaPet;Persist Security Info=False;User ID=diogo;Password=Dio853601!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;.
         /// </summary>
         internal static string DbConnectionString {
             get {

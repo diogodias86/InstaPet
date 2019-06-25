@@ -1,0 +1,56 @@
+﻿@model InstaPet.DomainModel.Entities.Pet
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Pet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" name="owner" value="@Model.Owner.Id" />
+            <input type="hidden" name="PhotoUrl" value="@Model.PhotoUrl" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Photo</label>
+                <input type="file" name="photoFile" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Specie</label>
+                <select name="specie"
+                        asp-items="@(new SelectList(ViewBag.Species, "Name", "Name", Model.Breed.Specie.Name))"
+                        class="form-control">
+                    <option>Select the Specie</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Breed" class="control-label"></label>
+                <input asp-for="Breed.Name" class="form-control" name="Breed" />
+                <span asp-validation-for="Breed" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

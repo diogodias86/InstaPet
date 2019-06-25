@@ -1,7 +1,5 @@
 ﻿using InstaPet.DomainModel.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace InstaPet.DomainModel.Interfaces.Repositories
 {

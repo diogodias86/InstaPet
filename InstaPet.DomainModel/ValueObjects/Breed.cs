@@ -21,6 +21,14 @@ namespace InstaPet.DomainModel.ValueObjects
             Name = name;
         }
 
+        public static Breed Parse(string breedStr)
+        {
+            var splittedValue = breedStr.Split('|');
+            Specie specie = splittedValue[0];
+            
+            return new Breed(specie, splittedValue[1]);
+        }
+
         public override int GetHashCode()
         {
             var hashCode = 1281875670;
@@ -38,7 +46,7 @@ namespace InstaPet.DomainModel.ValueObjects
 
         public override string ToString()
         {
-            return $"{Specie.ToString()} {Name.ToString()}";
+            return $"{Specie.Name}|{Name}";
         }
     }
 }

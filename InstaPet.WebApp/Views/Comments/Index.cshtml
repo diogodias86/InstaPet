@@ -1,0 +1,52 @@
+﻿@model IEnumerable<InstaPet.DomainModel.Entities.Comment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Comments from Post:</h4>
+
+<p>
+    @ViewBag.Post.Content
+</p>
+
+<p>
+    <a asp-action="Create" asp-route-id="@ViewBag.Post.Id">New Comment</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                Photo
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishDateTime)
+            </th>
+            <th>
+                By
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                <img src="@item.PhotoUrl" style="max-width:200px;height:auto" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishDateTime)
+            </td>
+            <td>
+                @item.Creator.Name
+            </td>            
+        </tr>
+}
+    </tbody>
+</table>
